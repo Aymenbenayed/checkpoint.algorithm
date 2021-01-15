@@ -1,0 +1,34 @@
+ALGORITHM chaine
+VAR
+    phs: STRING
+    nbr , voy , wrds : INTEGER
+BEGIN
+//nmbrs de characteres
+    Write('write your sentence')
+    Read (phs)
+    nbr:= length(phs)
+    Write('your sentence have ', nbr, 'characters' )
+
+//nmbrs des mots 
+    wrds :=0 
+    
+    FOR i := length(phs)
+    IF 
+    END_IF
+
+
+
+    
+//nm    brs de vowels
+    voy := 0;
+    FOR i := 1 à length(phs) 
+        DO
+        IF phs[i] ='a' or phs[i]='e'
+        or phs[i] ='i' or phs[i]='o' 
+        phs[i] ='u' or phs[i]='y'
+        THEN 
+        voy:=voy+1
+        END_IF
+    END_FOR
+    RETURN voy
+END
