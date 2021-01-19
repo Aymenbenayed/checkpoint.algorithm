@@ -1,0 +1,19 @@
+ALGORITHM Checkpoint_Algorithm
+VAR
+    ch:CHAR;
+    l:INTEGER:=0;
+    voy=INTEGER:=0;
+    wrds=INTEGER:=0;
+
+BEGIN
+    REPEAT
+        Read(ch);
+        l=l+1;
+        IF ((ch="") or ch=".") THEN
+        wrds=wrds+1;
+        ELSE  IF (ch in ['a','o','e','u','i','y','A','O','E','U','I','Y'])
+        THEN 
+        voy:=voy+1;
+        END_IF
+    UNTIL (ch=".");
+END
